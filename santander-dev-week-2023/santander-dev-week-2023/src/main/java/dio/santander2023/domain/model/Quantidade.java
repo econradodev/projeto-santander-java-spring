@@ -10,7 +10,9 @@ public class Quantidade {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    // Recebe a quantidade de munições que o militar recebeu no inicio do ano;
     private Integer quantidadeRecebida;
+    // Salva a quantidade de munições restantes;
     private Integer quantidadeRestante;
 
     public Integer getQuantidadeRestante() {

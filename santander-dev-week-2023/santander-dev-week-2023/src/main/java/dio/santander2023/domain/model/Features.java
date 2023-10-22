@@ -9,7 +9,9 @@ public class Features {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    //Descreve o que foi cargueado pelo militar;
     private String cargaDescricao;
+    //Descreve o que foi descargueado pelo militar;
     private String descargaDescricao;
 
     public Long getId() {

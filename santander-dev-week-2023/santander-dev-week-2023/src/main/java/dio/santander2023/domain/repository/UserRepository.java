@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    boolean existsByDados(String matricula);
+    //  boolean existsByDados(String matricula);
 }

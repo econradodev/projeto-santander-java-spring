@@ -24,6 +24,15 @@ dependencies {
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'org.postgresql:postgresql'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+}
+
+tasks.jar {
+	manifest {
+		attributes["Main-Class"] = "dio.santander2023.Application"
+	}
 }
 
 tasks.named('test') {

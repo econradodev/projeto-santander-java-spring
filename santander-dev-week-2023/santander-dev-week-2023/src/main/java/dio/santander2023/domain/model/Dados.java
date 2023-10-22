@@ -7,8 +7,10 @@ public class Dados {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    //Matricula do militar;
     @Column(unique = true)
     private String matricula;
+    //Unidade na qual o militar trabalha;
     private String unidade;
 
     public Long getId() {

@@ -23,9 +23,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User create(User userToCreate) {
-        if (userRepository.existsByDados(userToCreate.getDados().getMatricula())) {
-            throw new IllegalArgumentException("Já existe um usuário com a MATRÍCULA informada.");
-        }
+        userToCreate.getDados().getMatricula();
         return userRepository.save(userToCreate);
     }
 }
